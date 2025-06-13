@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero">
+    <h2>Find Your Next Home in Kenya</h2>
+    <p>AI-powered, location-based rental search within 1 km of your preferred area.</p>
+    <form class="search-form">
+        <input type="text" placeholder="Enter location or estate..." required>
+        <button type="submit">Search</button>
+    </form>
+</section>
+<section class="features">
+    <div class="feature">
+        <h3>Verified Listings</h3>
+        <p>Trustworthy properties with verification badges.</p>
+    </div>
+    <div class="feature">
+        <h3>Tenant Reviews</h3>
+        <p>Read honest reviews from previous tenants.</p>
+    </div>
+    <div class="feature">
+        <h3>Mobile Friendly</h3>
+        <p>Optimized for all devices for easy access on the go.</p>
+    </div>
+</section>
+{% endblock %}
