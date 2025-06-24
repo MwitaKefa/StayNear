@@ -58,3 +58,57 @@
 .search-input::placeholder {
     color: #aaa;
 }
+
+/* --- LISTING SECTION STYLES --- */
+.listing-section {
+    background: #fff;
+    padding: 2rem;
+}
+
+.listing-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.listing-column {
+    flex: 1 1 300px;
+}
+
+.listing-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #0a3d62;
+}
+
+.property-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.property-row img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.property-info p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.verified {
+    color: green;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
