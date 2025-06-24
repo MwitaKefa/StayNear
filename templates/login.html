@@ -1,20 +1,28 @@
-{% extends 'base.html' %}
-{% block content %}
-<section class="login-section">
-    <h2>Login to StayNear Homes</h2>
-    <form class="login-form" method="post">
-        {% csrf_token %}
-        <label for="user_type">I am a:</label>
-        <select id="user_type" name="user_type" required>
-            <option value="tenant">Tenant</option>
-            <option value="landlord">Landlord</option>
-        </select>
-        <label for="username">Username or Email:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Login</button>
-    </form>
-    <p class="login-note">Don't have an account? <a href="#">Register here</a></p>
-</section>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | StayNear Homes</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <section class="login-section">
+        <h2>Login to StayNear Homes</h2>
+        <form class="login-form" method="post">
+            {% csrf_token %}
+            <label for="user_type">I am a:</label>
+            <select id="user_type" name="user_type" required>
+                <option value="tenant">Tenant</option>
+                <option value="landlord">Landlord</option>
+            </select>
+            <label for="username">Username or Email:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p class="login-note">Don't have an account? <a href="#">Register here</a></p>
+    </section>
+</body>
+</html>

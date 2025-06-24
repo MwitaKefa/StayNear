@@ -1,265 +1,60 @@
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.hero-section {
     background: #f7f7f7;
-    color: #222;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-image: url('/static/images/bg-map-light.png'); /* optional subtle background */
+    background-size: cover;
+    background-position: center;
 }
 
-header {
-    background: #0a3d62;
-    color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.hero-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-nav a {
-    color: #fff;
-    margin-left: 1.5rem;
-    text-decoration: none;
-    font-weight: 500;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-.hero {
-    background: #38ada9;
-    color: #fff;
-    padding: 3rem 2rem 2rem 2rem;
-    text-align: center;
-}
-.hero h2 {
-    margin-top: 0;
+
+.hero-title {
     font-size: 2.5rem;
-}
-.search-form {
-    margin-top: 2rem;
-}
-.search-form input[type="text"] {
-    padding: 0.7rem;
-    width: 250px;
-    border: none;
-    border-radius: 4px 0 0 4px;
-    font-size: 1rem;
-}
-.search-form button {
-    padding: 0.7rem 1.2rem;
-    border: none;
-    background: #0a3d62;
-    color: #fff;
-    border-radius: 0 4px 4px 0;
-    font-size: 1rem;
-    cursor: pointer;
-}
-.features {
-    display: flex;
-    justify-content: space-around;
-    margin: 2rem 0;
-    flex-wrap: wrap;
-}
-.feature {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    padding: 1.5rem;
-    margin: 1rem;
-    flex: 1 1 250px;
-    max-width: 300px;
-    text-align: center;
-}
-/* Listing Feed Styles */
-.listing-feed {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    margin: 2rem auto;
-    padding: 2rem;
-    max-width: 900px;
-}
-.listing-feed h2 {
-    margin-top: 0;
-    font-size: 2rem;
+    font-weight: 700;
     color: #0a3d62;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.radius-info {
-    font-size: 1rem;
-    color: #38ada9;
-    background: #e0f7fa;
-    border-radius: 12px;
-    padding: 0.2rem 0.7rem;
-}
-.categories {
-    margin: 1.5rem 0 1rem 0;
-    display: flex;
-    gap: 1rem;
-}
-.category-btn {
-    background: #f7f7f7;
-    border: 1px solid #38ada9;
-    color: #0a3d62;
-    border-radius: 20px;
-    padding: 0.5rem 1.2rem;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background 0.2s, color 0.2s;
-}
-.category-btn.active, .category-btn:hover {
-    background: #38ada9;
-    color: #fff;
-}
-.property-listings {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: flex-start;
-}
-.property-card {
-    background: #fafafa;
-    border-radius: 8px;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
-    padding: 1.2rem 1.5rem;
-    margin-bottom: 1.5rem;
-    min-width: 250px;
-    max-width: 270px;
-    flex: 1 1 250px;
-    position: relative;
-}
-.property-card.verified {
-    border: 2px solid #38ada9;
-}
-.property-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-.badge {
-    background: #38ada9;
-    color: #fff;
-    font-size: 0.85rem;
-    border-radius: 8px;
-    padding: 0.2rem 0.7rem;
-    font-weight: 600;
-}
-.distance {
-    font-size: 0.9rem;
-    color: #0a3d62;
-}
-.category {
-    font-size: 0.95rem;
-    color: #38ada9;
-    margin-bottom: 0.3rem;
-}
-.price {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #0a3d62;
-    margin-bottom: 0.3rem;
-}
-.desc {
-    font-size: 0.97rem;
-    color: #444;
-}
-@media (max-width: 900px) {
-    .property-listings {
-        flex-direction: column;
-        align-items: center;
-    }
-    .listing-feed {
-        padding: 1rem;
-    }
-}
-footer {
-    background: #0a3d62;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-@media (max-width: 900px) {
-    .features {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-/* Login Page Styles */
-.login-section {
-    background: #fff;
-    max-width: 400px;
-    margin: 3rem auto 2rem auto;
-    padding: 2.5rem 2rem 2rem 2rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 16px rgba(56,173,169,0.10);
-    text-align: center;
-}
-.login-section h2 {
-    color: #0a3d62;
-    margin-bottom: 1.5rem;
-}
-.login-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.1rem;
+    line-height: 1.4;
     margin-bottom: 1rem;
 }
-.login-form label {
-    text-align: left;
-    font-weight: 500;
-    color: #0a3d62;
-    margin-bottom: 0.2rem;
-}
-.login-form input,
-.login-form select {
-    padding: 0.7rem;
-    border: 1px solid #38ada9;
-    border-radius: 6px;
-    font-size: 1rem;
-    background: #f7f7f7;
-    margin-bottom: 0.2rem;
-    transition: border 0.2s;
-}
-.login-form input:focus,
-.login-form select:focus {
-    border: 1.5px solid #0a3d62;
-    outline: none;
-}
-.login-form button {
-    background: #38ada9;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    padding: 0.8rem 0;
+
+.hero-subtitle {
     font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    transition: background 0.2s;
+    color: #333;
+    margin-bottom: 2rem;
 }
-.login-form button:hover {
+
+.hero-search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.search-btn {
     background: #0a3d62;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.4rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.login-note {
-    font-size: 0.97rem;
-    color: #444;
-    margin-top: 1.2rem;
+
+.search-input {
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 350px;
+    max-width: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
-.login-note a {
-    color: #38ada9;
-    text-decoration: underline;
-    font-weight: 500;
-}
-@media (max-width: 500px) {
-    .login-section {
-        padding: 1.2rem 0.5rem;
-    }
+
+.search-input::placeholder {
+    color: #aaa;
 }

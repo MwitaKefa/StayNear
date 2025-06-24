@@ -1,67 +1,28 @@
-{% extends 'base.html' %}
-{% block content %}
-<section class="hero">
-    <h2>Find Your Next Home in Kenya</h2>
-    <p>AI-powered, location-based rental search within 1 km of your preferred area.</p>
-    <form class="search-form">
-        <input type="text" placeholder="Enter location or estate..." required>
-        <button type="submit">Search</button>
-    </form>
-</section>
-<section class="features">
-    <div class="feature">
-        <h3>Verified Listings</h3>
-        <p>Trustworthy properties with verification badges.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StayNear Homes</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <section class="hero-section">
+    <div class="hero-container">
+      <h1 class="hero-title">Find Your Next Home —<br>Within 1 KM or Across Kenya</h1>
+      <p class="hero-subtitle">AI-powered, location-based rental listings you can trust.</p>
+      <form class="hero-search-form">
+        <button type="submit" class="search-btn">
+          🔍 Search Rentals Near Me
+        </button>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Enter location or landmark (e.g. Westlands, Nairobi)"
+          required
+        />
+      </form>
     </div>
-    <div class="feature">
-        <h3>Tenant Reviews</h3>
-        <p>Read honest reviews from previous tenants.</p>
-    </div>
-    <div class="feature">
-        <h3>Mobile Friendly</h3>
-        <p>Optimized for all devices for easy access on the go.</p>
-    </div>
-</section>
-
-<section class="listing-feed">
-    <h2>Properties Near You <span class="radius-info">(within 1 km)</span></h2>
-    <div class="categories">
-        <button class="category-btn active">All</button>
-        <button class="category-btn">Apartments</button>
-        <button class="category-btn">Bedsitters</button>
-        <button class="category-btn">Single Rooms</button>
-    </div>
-    <div class="property-listings">
-        <!-- Example property card -->
-        <div class="property-card verified">
-            <div class="property-header">
-                <span class="badge">Verified</span>
-                <span class="distance">0.8 km away</span>
-            </div>
-            <h3>Modern Apartment in Kilimani</h3>
-            <p class="category">Apartment</p>
-            <p class="price">KES 45,000/mo</p>
-            <p class="desc">2 bed, 2 bath, secure parking, close to Yaya Centre.</p>
-        </div>
-        <div class="property-card">
-            <div class="property-header">
-                <span class="distance">0.6 km away</span>
-            </div>
-            <h3>Bedsitter in Kileleshwa</h3>
-            <p class="category">Bedsitter</p>
-            <p class="price">KES 18,000/mo</p>
-            <p class="desc">Spacious bedsitter, water included, near Quickmart.</p>
-        </div>
-        <div class="property-card verified">
-            <div class="property-header">
-                <span class="badge">Verified</span>
-                <span class="distance">0.9 km away</span>
-            </div>
-            <h3>Single Room in Lavington</h3>
-            <p class="category">Single Room</p>
-            <p class="price">KES 10,000/mo</p>
-            <p class="desc">Clean, secure, ideal for students, close to public transport.</p>
-        </div>
-    </div>
-</section>
-{% endblock %}
+  </section>
+</body>
+</html>
