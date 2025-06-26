@@ -1,66 +1,127 @@
+<header class="main-header colored-header">
+  <div class="header-content">
+    <div class="logo-title">
+      <img src="/static/images/house1.jpg" alt="StayNear Homes Logo" class="logo-img">
+      <span class="company-name">StayNear Homes</span>
+    </div>
+    <a href="#list-property" class="header-cta">List Your Property</a>
+  </div>
+</header>
+
 <link rel="stylesheet" href="/static/css/style.css" />
 
-  <!-- HERO SECTION -->
-  <section class="hero-section">
-    <div class="hero-container">
-      <h1 class="hero-title">Find Your Next Home —<br>Within 1 KM or Across Kenya</h1>
-      <p class="hero-subtitle">AI-powered, location-based rental listings you can trust.</p>
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <div class="hero-container">
+    <h1 class="hero-title">Find Your Next Home —<br>Within 1 KM or Across Kenya</h1>
+    <p class="hero-subtitle">AI-powered, location-based rental listings you can trust.</p>
+    <form class="hero-search-form">
+      <button type="submit" class="search-btn">
+        🔍 Search Rentals Near Me
+      </button>
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Enter location or landmark (e.g. Westlands, Nairobi)"
+        required
+      />
+    </form>
+  </div>
+</section>
 
-      <form class="hero-search-form">
-        <button type="submit" class="search-btn">
-          🔍 Search Rentals Near Me
-        </button>
-        <input
-          type="text"
-          class="search-input"
-          placeholder="Enter location or landmark (e.g. Westlands, Nairobi)"
-          required
-        />
-      </form>
-    </div>
-  </section>
+<!-- Trust Badges Section -->
+<div class="trust-badges">
+  <div class="badge-item"><span class="badge-icon">🔒</span> Secure & Verified Listings</div>
+  <div class="badge-item"><span class="badge-icon">🤝</span> Trusted by 10,000+ Tenants</div>
+  <div class="badge-item"><span class="badge-icon">🏆</span> Top-rated Landlords</div>
+  <div class="badge-item"><span class="badge-icon">💬</span> Real Tenant Reviews</div>
+</div>
 
-  <!-- LISTING SECTION -->
-  <section class="listing-section">
-    <div class="listing-columns">
-
-      <!-- Near You -->
-      <div class="listing-column">
-        <h3 class="listing-title">Near You</h3>
-
-        <div class="property-row">
-          <img src="/static/images/house1.jpg" alt="House 1">
-          <div class="property-info">
-            <p><strong>3 BHK 43 MK</strong><br>3.19 moka<br><span class="verified">✔ Verified</span></p>
-          </div>
-        </div>
-
-        <div class="property-row">
-          <img src="/static/images/house2.jpg" alt="House 2">
-          <div class="property-info">
-            <p><strong>4 BHK, 2.1 MK</strong><br>1.1 km oka<br><span class="verified">✔ Verified</span></p>
-          </div>
+<!-- LISTING SECTION -->
+<section class="listing-section">
+  <div class="listing-columns">
+    <!-- Near You -->
+    <div class="listing-column">
+      <h3 class="listing-title">Near You</h3>
+      <div class="property-row">
+        <img src="/static/images/house1.jpg" alt="House 1" />
+        <div class="property-info">
+          <p><strong>3 BHK 43 MK</strong><br />3.19 moka<br /><span class="verified">✔ Verified</span></p>
         </div>
       </div>
-
-      <!-- Explore More -->
-      <div class="listing-column">
-        <h3 class="listing-title">Explore More</h3>
-
-        <div class="property-row">
-          <img src="/static/images/house3.jpg" alt="House 3">
-          <div class="property-info">
-            <p><strong>3 BHK 4.5 BKK</strong><br>4.1 kma<br><span class="verified">✔ Verified</span></p>
-          </div>
-        </div>
-
-        <div class="property-row">
-          <img src="/static/images/house4.jpg" alt="House 4">
-          <div class="property-info">
-            <p><strong>4 BHK 2.5 MK</strong><br>3.9 kma<br><span class="verified">✔ Verified</span></p>
-          </div>
+      <div class="property-row">
+        <img src="/static/images/house2.jpg" alt="House 2" />
+        <div class="property-info">
+          <p><strong>4 BHK, 2.1 MK</strong><br />1.1 km oka<br /><span class="verified">✔ Verified</span></p>
         </div>
       </div>
-
     </div>
-  </section>
+
+    <!-- Explore More -->
+    <div class="listing-column">
+      <h3 class="listing-title">Explore More</h3>
+      <div class="property-row">
+        <img src="/static/images/house3.jpg" alt="House 3" />
+        <div class="property-info">
+          <p><strong>3 BHK 4.5 BKK</strong><br />4.1 kma<br /><span class="verified">✔ Verified</span></p>
+        </div>
+      </div>
+      <div class="property-row">
+        <img src="/static/images/house4.jpg" alt="House 4" />
+        <div class="property-info">
+          <p><strong>4 BHK 2.5 MK</strong><br />3.9 kma<br /><span class="verified">✔ Verified</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Use StayNear Section -->
+  <hr />
+  <div class="why-section">
+    <h3>Why Use StayNear?</h3>
+    <div class="why-items">
+      <div class="why-item">📍 Hyper-local discovery (1 km radius)</div>
+      <div class="why-item">✅ AI-filtered, verified listings</div>
+      <div class="why-item">💬 Scam protection + tenant reviews</div>
+      <div class="why-item">🚌 Filter by matatu routes and landmarks</div>
+    </div>
+  </div>
+
+  <!-- Featured Areas Section -->
+  <hr />
+  <div class="featured-searches">
+    <h4>Featured Areas or Popular Searches</h4>
+    <div class="tags">
+      <span class="tag">#AffordableInKilimani</span>
+      <span class="tag">#StudentRentsNearKU</span>
+      <span class="tag">#BeachsideDianiHomes</span>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <hr />
+  <div class="vacant-cta">
+    <h4>Have a vacant property?</h4>
+    <p>Reach tenants nearby instantly</p>
+    <button>List Your Property</button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="main-footer colored-footer">
+  <div class="footer-content">
+    <div class="footer-about">
+      <h4>About StayNear Homes</h4>
+      <p>StayNear Homes is Kenya's trusted AI-powered rental platform, connecting tenants and landlords with verified, location-based listings. Our mission is to make finding and listing property safe, easy, and transparent for everyone.</p>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: info@staynear.co.ke</p>
+      <p>Phone: +254 700 000 000</p>
+      <p>Location: Nairobi, Kenya</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 StayNear Homes. All rights reserved.
+  </div>
+</footer>
