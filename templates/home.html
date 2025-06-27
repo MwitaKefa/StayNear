@@ -1,7 +1,7 @@
-<header class="main-header colored-header">
+<header class="main-header transparent-header">
   <div class="header-content">
     <div class="logo-title">
-      <img src="/static/images/house1.jpg" alt="StayNear Homes Logo" class="logo-img">
+      <img src="/static/images/logo.png" alt="StayNear Homes Logo" class="logo-img">
       <span class="company-name">StayNear Homes</span>
     </div>
     <a href="#list-property" class="header-cta">List Your Property</a>
@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/static/css/style.css" />
 
 <!-- HERO SECTION -->
-<section class="hero-section">
+<section class="hero-section screen-bg">
   <div class="hero-container">
     <h1 class="hero-title">Find Your Next Home —<br>Within 1 KM or Across Kenya</h1>
     <p class="hero-subtitle">AI-powered, location-based rental listings you can trust.</p>
@@ -22,7 +22,7 @@
       <input
         type="text"
         class="search-input"
-        placeholder="Enter location or landmark (e.g. Westlands, Nairobi)"
+        placeholder="Search by area, estate, or landmark"
         required
       />
     </form>
@@ -44,9 +44,13 @@
     <div class="listing-column">
       <h3 class="listing-title">Near You</h3>
       <div class="property-row">
-        <img src="/static/images/house1.jpg" alt="House 1" />
+        <a href="/property/1" style="display:contents;">
+          <img src="/static/images/house1.jpg" alt="House 1" />
+        </a>
         <div class="property-info">
-          <p><strong>3 BHK 43 MK</strong><br />3.19 moka<br /><span class="verified">✔ Verified</span></p>
+          <a href="/property/1" style="color:inherit;text-decoration:none;">
+            <p><strong>3 Bedroom Apartment Plus</strong><br />0.9km<br /><span class="verified">✔ Verified</span></p>
+          </a>
         </div>
       </div>
       <div class="property-row">
@@ -63,7 +67,7 @@
       <div class="property-row">
         <img src="/static/images/house3.jpg" alt="House 3" />
         <div class="property-info">
-          <p><strong>3 BHK 4.5 BKK</strong><br />4.1 kma<br /><span class="verified">✔ Verified</span></p>
+          <p><strong>1 Bedroom Apartment Plus</strong><br />Langata (3.2km)<br /><span class="verified">✔ Verified</span></p>
         </div>
       </div>
       <div class="property-row">

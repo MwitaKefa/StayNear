@@ -10,7 +10,7 @@
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url('/static/images/bg-map-light.png');
+    background-image: url('/static/images/screen.png');
     background-size: cover;
     background-position: center;
     filter: blur(8px) brightness(0.85);
@@ -310,6 +310,11 @@ hr {
     z-index: 100;
     padding: 0.5rem 0;
 }
+.main-header.transparent-header {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
 .header-content {
     max-width: 1100px;
     margin: 0 auto;
@@ -324,12 +329,14 @@ hr {
     gap: 0.7rem;
 }
 .logo-img {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 2px 8px rgba(56,173,169,0.10);
-    border: 2px solid #e0f7fa;
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    object-fit: contain;
+    box-shadow: none;
+    border: none;
+    background: #fff;
+    padding: 4px;
 }
 .company-name {
     font-size: 1.5rem;
