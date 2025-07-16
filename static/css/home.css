@@ -1,0 +1,189 @@
+/* ========= Home Page Specific Styles ========= */
+
+/* Hero Section */
+.hero-section {
+  background: #f7f7f7;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0a3d62;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+.hero-search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.search-btn {
+  background: #0a3d62;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.search-input {
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 350px;
+  max-width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Listings Section */
+.listing-section {
+  background: #fff;
+  padding: 2rem;
+}
+.listing-columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.listing-column {
+  flex: 1 1 300px;
+}
+.listing-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #0a3d62;
+}
+.property-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+.property-row img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.property-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Why Use StayNear Section */
+.why-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.why-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 2rem;
+  max-width: 800px;
+  margin: 1rem auto 0 auto;
+  color: #333;
+}
+.why-item {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Featured Tags */
+.featured-searches {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.featured-searches h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+}
+.tag {
+  background: #0a3d62;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+
+/* CTA Section */
+.vacant-cta {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #fafafa;
+  border-radius: 10px;
+  margin: 2rem auto 0;
+  max-width: 600px;
+}
+.vacant-cta button {
+  background: #7ed957;
+  color: #000;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+.vacant-cta button:hover {
+  background: #0a3d62;
+  color: #fff;
+}
+
+/* Section Divider */
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2rem auto;
+  max-width: 85%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-search-form {
+    flex-direction: column;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .listing-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .listing-column {
+    width: 100%;
+  }
+}

@@ -1,0 +1,83 @@
+/* ========= Property Detail Page Specific Styles ========= */
+
+/* Property Detail Section */
+.property-detail-section {
+  padding: 3rem 1rem;
+}
+.property-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(56, 173, 169, 0.08);
+  padding: 2rem;
+  align-items: flex-start;
+}
+.property-detail-img {
+  width: 350px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(56, 173, 169, 0.10);
+  background: #e0f7fa;
+}
+.property-detail-info {
+  flex: 1;
+  min-width: 260px;
+}
+.property-detail-info h2 {
+  color: #0a3d62;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.property-location {
+  color: #38ada9;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.property-price {
+  color: #0a3d62;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.property-features {
+  margin-bottom: 1.2rem;
+  padding-left: 1.2rem;
+}
+.property-features li {
+  margin-bottom: 0.5rem;
+  font-size: 1.08rem;
+  color: #222;
+  line-height: 1.5;
+  position: relative;
+}
+.property-features li::before {
+  content: "\2022";
+  color: #38ada9;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Badges (reused but part of detail page) */
+.property-badges {
+  margin-bottom: 1.2rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 800px) {
+  .property-detail-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+  }
+  .property-detail-img {
+    width: 100%;
+    height: 200px;
+  }
+}
