@@ -2,59 +2,69 @@
 
 /* Property Detail Section */
 .property-detail-section {
-  padding: 3rem 1rem;
+  padding: 4rem 1.5rem;
 }
+
 .property-detail-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
-  max-width: 900px;
+  gap: 3rem;
+  max-width: 1000px;
   margin: 0 auto;
   background: #fff;
-  border-radius: 18px;
+  border-radius: 20px;
   box-shadow: 0 4px 24px rgba(56, 173, 169, 0.08);
-  padding: 2rem;
+  padding: 2.5rem;
   align-items: flex-start;
 }
+
 .property-detail-img {
-  width: 350px;
-  height: 260px;
+  width: 380px;
+  height: 280px;
   object-fit: cover;
-  border-radius: 14px;
-  box-shadow: 0 2px 12px rgba(56, 173, 169, 0.10);
+  border-radius: 16px;
+  box-shadow: 0 3px 14px rgba(56, 173, 169, 0.12);
   background: #e0f7fa;
 }
+
 .property-detail-info {
   flex: 1;
-  min-width: 260px;
+  min-width: 280px;
 }
+
 .property-detail-info h2 {
   color: #0a3d62;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
+
 .property-location {
   color: #38ada9;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
 }
+
 .property-price {
   color: #0a3d62;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-}
-.property-features {
   margin-bottom: 1.2rem;
-  padding-left: 1.2rem;
 }
+
+.property-features {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
 .property-features li {
-  margin-bottom: 0.5rem;
-  font-size: 1.08rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
   color: #222;
-  line-height: 1.5;
+  line-height: 1.6;
   position: relative;
 }
+
 .property-features li::before {
   content: "\2022";
   color: #38ada9;
@@ -66,7 +76,7 @@
 
 /* Badges (reused but part of detail page) */
 .property-badges {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Responsive Layout */
@@ -74,10 +84,27 @@
   .property-detail-container {
     flex-direction: column;
     align-items: center;
-    padding: 1.2rem;
+    padding: 1.5rem;
   }
+
   .property-detail-img {
     width: 100%;
-    height: 200px;
+    height: 220px;
+  }
+
+  .property-detail-info h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .property-location,
+  .property-price,
+  .property-features {
+    text-align: center;
+  }
+
+  .property-features {
+    padding-left: 0;
+    list-style-position: inside;
   }
 }

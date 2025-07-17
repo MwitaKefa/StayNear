@@ -7,13 +7,22 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9fbfc;
   color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 0 1rem;
+}
+
+section {
+  padding: 3rem 1rem;
 }
 
 /* Header */
 .main-header {
-  background: rgba(255, 255, 255, 0.85); /* soft milky background */
-  backdrop-filter: blur(6px); /* subtle glass effect */
-  -webkit-backdrop-filter: blur(6px); /* Safari support */
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
