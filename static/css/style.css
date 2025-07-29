@@ -47,6 +47,44 @@ section {
   color: #0a3d62;
 }
 
+/* Header Content */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-right: 2rem; /* Adds more space before the button */
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0a3d62;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .logo-title {
+    margin-right: 0;
+  }
+}
+/* Navigation */
+
 /* CTA Button (Shared) */
 .header-cta {
   background: linear-gradient(90deg, #38ada9 0%, #0a3d62 100%);

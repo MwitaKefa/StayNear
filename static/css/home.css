@@ -1,5 +1,27 @@
 /* ========= Home Page Specific Styles ========= */
 
+.section-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(56, 173, 169, 0.08);
+  margin: 2.5rem auto;
+  padding: 2.5rem 1.5rem;
+  max-width: 840px;
+  width: 100%;
+  transition: box-shadow 0.2s;
+}
+
+.section-card:not(:first-child) {
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 700px) {
+  .section-card {
+    padding: 1.2rem 0.5rem;
+    margin: 1.2rem 0.2rem;
+  }
+}
+
 /* Hero Section */
 .hero-section {
   background: #f7f7f7;
@@ -49,6 +71,46 @@
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
+/* Trust Badges Section */
+.trust-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Space between badges */
+  background-color: #e6f9fc; /* Light blue */
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  flex-wrap: wrap; /* So it stays responsive on smaller screens */
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #002b45;
+}
+
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+.badge-item:hover {
+  transform: translateY(-2px);
+}
+
+.badge-icon {
+  font-size: 1.2rem;
+}
+.badge-text {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 /* Listings Section */
 .listing-section {
   background: #fff;
@@ -56,40 +118,110 @@
 }
 .listing-columns {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
 .listing-column {
-  flex: 1 1 300px;
-  max-width: 400px;
+  flex: 1 1 320px;
+  max-width: 370px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .listing-title {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: #0a3d62;
+  text-align: left;
 }
+/* Property Card Styles */
 .property-row {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1.2rem;
   align-items: center;
-  background: #f9f9f9;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  gap: 1.2rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(56, 173, 169, 0.10);
+  border: 1px solid #eafafa;
+  padding: 1.2rem 1.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+  min-width: 0;
+  position: relative;
 }
+
+.property-row:hover {
+  box-shadow: 0 8px 24px rgba(56, 173, 169, 0.18);
+  transform: translateY(-4px) scale(1.02);
+}
+
 .property-row img {
-  width: 100px;
-  height: 70px;
+  width: 110px;
+  height: 80px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
+  background: #eafafa;
+  border: 1px solid #d0f0f3;
+  flex-shrink: 0;
+}
+
+.property-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.property-info p {
+  margin: 0;
+  font-size: 1.08rem;
+  color: #0a3d62;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.verified {
+  display: inline-block;
+  background: #38ada9;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.15rem 0.7rem;
+  font-size: 0.93rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  .property-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .property-row img {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 0.7rem;
+  }
 }
 .property-info p {
   margin: 0;
   font-size: 1rem;
   color: #333;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .listing-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .listing-column {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 /* Why Use StayNear Section */
@@ -174,9 +306,15 @@ hr {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.1rem;
+@media (max-width: 900px) {
+  .listing-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .listing-column {
+    max-width: 100%;
+    width: 100%;
   }
   .hero-search-form {
     flex-direction: column;
