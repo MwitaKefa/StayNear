@@ -1,17 +1,13 @@
+<!-- filepath: /home/kefamwita/Desktop/StayNear/templates/property_detail.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Property Details | StayNear Homes</title>
-
-  <!-- Global Styles -->
   <link rel="stylesheet" href="/static/css/style.css">
-
-  <!-- Property Detail Page Specific Styles -->
   <link rel="stylesheet" href="/static/css/property_detail.css">
 </head>
-
 <body>
   <header class="main-header">
     <div class="header-content">
@@ -23,7 +19,7 @@
     </div>
   </header>
 
-  <!-- Property Details Section -->
+  <!-- Property Details Card -->
   <div class="section-card">
     <section class="property-detail-section">
       <div class="property-detail-container">
@@ -57,35 +53,7 @@
     </section>
   </div>
 
-   <!-- Landlord Profile Section -->
-  <div class="section-card">
-    <section class="landlord-profile">
-      <h3>About the Landlord</h3>
-      <div class="landlord-info">
-        <img src="/static/images/landlord.jpg" alt="Landlord Photo" class="landlord-img">
-        <div class="landlord-details">
-          <p><strong>Name:</strong> John Mwangi</p>
-          <p><strong>Experience:</strong> 10+ years, 12 properties listed</p>
-          <p><strong>Ratings:</strong> ⭐⭐⭐⭐☆ (4.7 from 89 reviews)</p>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- Contact Form Section -->
-  <div class="section-card">
-    <section class="contact-form-section">
-      <h3>Send an Inquiry</h3>
-      <form class="inquiry-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message or Inquiry" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </div>
-
-  <!-- More Listings Section -->
+  <!-- More Listings Card -->
   <div class="section-card">
     <section class="more-listings-section">
       <h3>Explore More Listings in This Area</h3>
@@ -106,11 +74,48 @@
             <a href="/property_detail/3">View Details</a>
           </div>
         </div>
+        <div class="listing-card">
+          <img src="/static/images/house4.jpg" alt="House 4">
+          <div class="card-info">
+            <p><strong>3 BHK Modern Flat</strong></p>
+            <p>3.7 km • KES 48,000/mo</p>
+            <a href="/property_detail/4">View Details</a>
+          </div>
+        </div>
       </div>
     </section>
   </div>
 
-  <!-- Map Section -->
+  <!-- Landlord Profile + Contact Form Card -->
+  <div class="section-card landlord-contact-wrapper">
+
+    <!-- Landlord Profile -->
+    <section class="landlord-profile">
+      <h3>About the Landlord</h3>
+      <div class="landlord-info">
+        <img src="/static/images/landlord.jpg" alt="Landlord Photo" class="landlord-img">
+        <div class="landlord-details">
+          <p><strong>Name:</strong> John Mwangi</p>
+          <p><strong>Experience:</strong> 10+ years, 12 properties listed</p>
+          <p><strong>Ratings:</strong> ⭐⭐⭐⭐☆ (4.7 from 89 reviews)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+      <h3>Send an Inquiry</h3>
+      <form class="inquiry-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message or Inquiry" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </div>
+
+  <!-- Map Card -->
   <div class="section-card">
     <section class="map-section">
       <h3>Location</h3>
@@ -142,4 +147,3 @@
     </div>
   </footer>
 </body>
-</html>
