@@ -137,6 +137,35 @@
   flex-wrap: wrap;
 }
 
+.landlord-summary-card {
+  max-width: 500px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding: 1.5rem 1rem;
+}
+.landlord-summary .landlord-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.landlord-summary .landlord-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #38ada9;
+}
+.landlord-summary .landlord-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.landlord-summary .landlord-email {
+  color: #38ada9;
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+}
+
 /* Make each section share space */
 .landlord-profile, 
 .contact-form-section {

@@ -19,6 +19,7 @@
     </div>
   </header>
 
+
   <!-- Property Details Card -->
   <div class="section-card">
     <section class="property-detail-section">
@@ -47,6 +48,19 @@
             <span class="verified">✔ Verified</span>
             <span class="badge-item"><span class="badge-icon">🏆</span> Top-rated Landlord</span>
           </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Landlord Summary Card (with CTA) -->
+  <div class="section-card landlord-summary-card">
+    <section class="landlord-summary">
+      <div class="landlord-info">
+        <img src="/static/images/landlord.jpg" alt="Landlord Photo" class="landlord-img">
+        <div class="landlord-details">
+          <p><strong>John Mwangi</strong></p>
+          <p class="landlord-email">john.mwangi@email.com</p>
           <a href="#contact" class="header-cta">Contact Landlord</a>
         </div>
       </div>
@@ -89,6 +103,8 @@
   <!-- Landlord Profile + Contact Form Card -->
   <div class="section-card landlord-contact-wrapper">
 
+ <!-- Full Landlord Profile + Inquiry Form (bottom) -->
+  <div class="section-card landlord-contact-wrapper">
     <!-- Landlord Profile -->
     <section class="landlord-profile">
       <h3>About the Landlord</h3>
@@ -101,9 +117,9 @@
         </div>
       </div>
     </section>
-
+    
     <!-- Contact Form -->
-    <section class="contact-form-section">
+    <section class="contact-form-section" id="contact">
       <h3>Send an Inquiry</h3>
       <form class="inquiry-form">
         <input type="text" placeholder="Your Name" required>
@@ -112,7 +128,6 @@
         <button type="submit">Send Message</button>
       </form>
     </section>
-
   </div>
 
   <!-- Map Card -->
