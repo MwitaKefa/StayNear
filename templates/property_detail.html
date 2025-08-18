@@ -19,11 +19,12 @@
     </div>
   </header>
 
-
-  <!-- Property Details Card -->
-  <div class="section-card">
-    <section class="property-detail-section">
-      <div class="property-detail-container">
+<!-- Property Details Card (with Landlord Summary below details, on same card) -->
+<div class="section-card">
+  <section class="property-detail-section">
+    <div class="property-detail-container" style="flex-direction: column; gap: 2.5rem;">
+      <!-- Property Info -->
+      <div class="property-detail-main" style="display: flex; flex-direction: row; gap: 2.5rem;">
         <img src="/static/images/house1.jpg" alt="Property Image" class="property-detail-img">
         <div class="property-detail-info">
           <h2>3 Bedroom Apartment Plus</h2>
@@ -50,22 +51,20 @@
           </div>
         </div>
       </div>
-    </section>
-  </div>
-
-  <!-- Landlord Summary Card (with CTA) -->
-  <div class="section-card landlord-summary-card">
-    <section class="landlord-summary">
-      <div class="landlord-info">
-        <img src="/static/images/landlord.jpg" alt="Landlord Photo" class="landlord-img">
-        <div class="landlord-details">
-          <p><strong>John Mwangi</strong></p>
-          <p class="landlord-email">john.mwangi@email.com</p>
-          <a href="#contact" class="header-cta">Contact Landlord</a>
+      <!-- Landlord Summary BELOW property details, on same card -->
+      <div class="landlord-summary">
+        <div class="landlord-info">
+          <img src="/static/images/landlord.jpg" alt="Landlord Photo" class="landlord-img">
+          <div class="landlord-details">
+            <p><strong>John Mwangi</strong></p>
+            <p class="landlord-email">john.mwangi@email.com</p>
+            <a href="#contact" class="header-cta">Contact Landlord</a>
+          </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+</div>
 
   <!-- More Listings Card -->
   <div class="section-card">
@@ -117,7 +116,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- Contact Form -->
     <section class="contact-form-section" id="contact">
       <h3>Send an Inquiry</h3>
