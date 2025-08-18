@@ -19,52 +19,67 @@
     </div>
   </header>
 
-<!-- Property Details Card (with Landlord Summary below details, on same card) -->
-<div class="section-card">
-  <section class="property-detail-section">
-    <div class="property-detail-container" style="flex-direction: column; gap: 2.5rem;">
-      <!-- Property Info -->
-      <div class="property-detail-main" style="display: flex; flex-direction: row; gap: 2.5rem;">
-        <img src="/static/images/house1.jpg" alt="Property Image" class="property-detail-img">
-        <div class="property-detail-info">
-          <h2>3 Bedroom Apartment Plus</h2>
-          <p class="property-location">Near You &mdash; 0.9km</p>
-          <p class="property-price">KES 45,000/mo</p>
-          <ul class="property-features">
-            <li>Spacious, modern apartment with 3 bedrooms and 2 bathrooms</li>
-            <li>Secure parking for residents</li>
-            <li>Close to major amenities and public transport</li>
-            <li>Perfect for families or professionals</li>
-            <li>24/7 security and gated community</li>
-            <li>High-speed internet and backup power</li>
-          </ul>
-          <h3>Rental Policies</h3>
-          <ul>
-            <li>1 month deposit + 1st month's rent upfront</li>
-            <li>Pets allowed: 🐾 Yes</li>
-            <li>Minimum lease term: 6 months</li>
-            <li>Water & electricity billed separately</li>
-          </ul>
-          <div class="property-badges">
-            <span class="verified">✔ Verified</span>
-            <span class="badge-item"><span class="badge-icon">🏆</span> Top-rated Landlord</span>
+  <!-- Property Details Card (with Landlord Summary below details, on same card) -->
+  <div class="section-card">
+    <section class="property-detail-section">
+      <div class="property-detail-container">
+        <div class="property-detail-main">
+          <div class="property-detail-image-wrap">
+            <img src="/static/images/house1.jpg" alt="Property Image" class="property-detail-img">
+            <div class="image-gallery-grid" aria-label="Property images">
+              <img src="/static/images/house1.jpg" alt="Image 1" class="active">
+              <img src="/static/images/house2.jpg" alt="Image 2">
+              <img src="/static/images/house3.jpg" alt="Image 3">
+              <img src="/static/images/house4.jpg" alt="Image 4">
+              <img src="/static/images/house5.jpg" alt="Image 5">
+              <img src="/static/images/house6.jpg" alt="Image 6">
+              <img src="/static/images/house7.jpg" alt="Image 7">
+              <img src="/static/images/house8.jpg" alt="Image 8">
+              <img src="/static/images/house9.jpg" alt="Image 9">
+              <img src="/static/images/house10.jpg" alt="Image 10">
+            </div>
+          </div>
+
+          <div class="property-detail-info">
+            <h2>3 Bedroom Apartment Plus</h2>
+            <p class="property-location">Near You &mdash; 0.9km</p>
+            <p class="property-price">KES 45,000/mo</p>
+            <ul class="property-features">
+              <li>Spacious, modern apartment with 3 bedrooms and 2 bathrooms</li>
+              <li>Secure parking for residents</li>
+              <li>Close to major amenities and public transport</li>
+              <li>Perfect for families or professionals</li>
+              <li>24/7 security and gated community</li>
+              <li>High-speed internet and backup power</li>
+            </ul>
+            <h3>Rental Policies</h3>
+            <ul>
+              <li>1 month deposit + 1st month's rent upfront</li>
+              <li>Pets allowed: 🐾 Yes</li>
+              <li>Minimum lease term: 6 months</li>
+              <li>Water & electricity billed separately</li>
+            </ul>
+            <div class="property-badges">
+              <span class="verified">✔ Verified</span>
+              <span class="badge-item"><span class="badge-icon">🏆</span> Top-rated Landlord</span>
+            </div>
+          </div> <!-- .property-detail-info -->
+        </div> <!-- .property-detail-main -->
+
+        <!-- Landlord summary below details (same card) -->
+        <div class="landlord-summary">
+          <div class="landlord-info">
+            <img src="/static/images/landlord.jpg" alt="Landlord Photo" class="landlord-img">
+            <div class="landlord-details">
+              <p><strong>John Mwangi</strong></p>
+              <p class="landlord-email">john.mwangi@email.com</p>
+              <a href="#contact" class="header-cta">Contact Landlord</a>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Landlord Summary BELOW property details, on same card -->
-      <div class="landlord-summary">
-        <div class="landlord-info">
-          <img src="/static/images/landlord.jpg" alt="Landlord Photo" class="landlord-img">
-          <div class="landlord-details">
-            <p><strong>John Mwangi</strong></p>
-            <p class="landlord-email">john.mwangi@email.com</p>
-            <a href="#contact" class="header-cta">Contact Landlord</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
+      </div> <!-- .property-detail-container -->
+    </section>
+  </div>
 
   <!-- More Listings Card -->
   <div class="section-card">
@@ -141,6 +156,7 @@
       </iframe>
     </section>
   </div>
+  </div>
 
   <!-- Footer -->
   <footer class="main-footer colored-footer">
@@ -160,4 +176,25 @@
       &copy; 2025 StayNear Homes. All rights reserved.
     </div>
   </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const grid = document.querySelector('.image-gallery-grid');
+    if (!grid) return;
+    const imgs = Array.from(grid.querySelectorAll('img'));
+    // enable gallery-scroll only when > 8 images
+    if (imgs.length > 8) grid.classList.add('gallery-scroll');
+    // thumbnail click -> update main image + active class
+    grid.addEventListener('click', function (e) {
+      const t = e.target;
+      if (t && t.tagName === 'IMG') {
+        imgs.forEach(i => i.classList.remove('active'));
+        t.classList.add('active');
+        const main = document.querySelector('.property-detail-img');
+        if (main) main.src = t.src;
+      }
+    });
+  });
+</script>
 </body>
+</html>
